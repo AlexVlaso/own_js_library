@@ -1,3 +1,9 @@
 import $ from "./lib/lib";
 
-$(".active").addClasses("test", "hello").removeClasses("active");
+$(".active").on("click", logger);
+
+$(".active").off("click", logger);
+
+function logger() {
+  console.log("Hello");
+}
