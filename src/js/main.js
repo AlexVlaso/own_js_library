@@ -1,3 +1,3 @@
 import $ from "./lib/lib";
 
-$(".active").hide().show();
+$(".active").addClasses("test", "hello").removeClasses("active");
