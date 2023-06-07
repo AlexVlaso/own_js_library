@@ -15,7 +15,7 @@ $.prototype.modal = function () {
     });
     $(".modal").click((e) => {
       e.preventDefault();
-      if (e.target.classlist.contains(".modal")) {
+      if (e.target.classList.contains(".modal")) {
         modal.style.display = "none";
       }
     });
